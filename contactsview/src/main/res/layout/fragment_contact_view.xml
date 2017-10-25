@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titlebar_height"
+        android:background="@color/navigation">
+
+        <ImageView
+            android:id="@+id/titlebar_left_img"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="15dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_nav_back" />
+
+        <TextView
+            android:id="@+id/titlebar_right_text"
+            style="@style/TitleBarText.Right"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="8dp"
+            android:background="@drawable/selector_title_btn"
+            android:enabled="false"
+            android:gravity="center"
+            android:padding="4dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/btn_confirm"
+            android:textColor="@color/title_text"
+            android:textSize="14dp" />
+
+    </RelativeLayout>
+
+
+    <include
+        layout="@layout/view_searchbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titlebar"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="7dp" />
+
+    <com.vitaviva.floatinglistview.FloatingGroupExpandableListView
+        android:id="@android:id/list"
+        style="@style/CommonListView"
+        android:layout_below="@+id/searchbar" />
+
+    <com.vitaviva.contactsview.view.IndexBar
+        android:id="@+id/indexBar"
+        style="@style/Indexbar"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:text="@string/hint_loading"
+            android:textColor="@color/text_second"
+            android:textSize="@dimen/text_16" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vitaviva.contactsview.view.SearchBar
+    android:id="@+id/searchbar"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_gray_selector"
+    android:clickable="true"
+    android:minHeight="28dp"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp">
+
+    <TextView
+        android:id="@+id/tint"
+        style="@style/SingleLine"
+        android:layout_gravity="center_vertical"
+        android:drawableLeft="@drawable/ic_searchbar_gray"
+        android:drawablePadding="5dp"
+        android:textColor="@color/gray_4d"
+        android:textSize="@dimen/text_12"/>
+</com.vitaviva.contactsview.view.SearchBar>

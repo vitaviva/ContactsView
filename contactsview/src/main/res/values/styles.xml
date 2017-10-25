@@ -1,0 +1,147 @@
+<resources>
+
+    <style name="SingleLine">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="TextView_Indexbar_FloatText" parent="SingleLine">
+
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">120dp</item>
+        <item name="android:background">@drawable/letter_glow</item>
+        <item name="android:textColor">@color/text_first_revert</item>
+        <item name="android:textSize">35dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <style name="Indexbar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_indexbar</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingBottom">7dp</item>
+        <item name="android:paddingTop">7dp</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="indexItemTextColor">@color/gray_4d</item>
+        <item name="indexItemTextSize">@dimen/text_9</item>
+    </style>
+
+
+    <style name="TextView_ListGroup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/text_second</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:background">@color/bg_common</item>
+    </style>
+
+    <style name="TextView_ListItem_SecondLine" >
+        <item name="android:textAppearance">@style/SingleLine</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">left</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/text_second</item>
+        <item name="android:textSize">@dimen/text_12</item>
+    </style>
+
+    <style name="TextView_ListItem_FirstLine">
+        <item name="android:textAppearance">@style/SingleLine</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">left</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/text_first</item>
+        <item name="android:textSize">@dimen/text_15</item>
+    </style>
+
+    <style name="Checkbox">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/selector_check</item>
+    </style>
+
+    <style name="TitleBarText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textSize">@dimen/text_18</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_first_revert</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="TitleBarText.Right" parent="TitleBarText">
+
+        <item name="android:maxWidth">190dp</item>
+        <item name="android:ellipsize">middle</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:textColor">@color/four_text_white_selector</item>
+        <item name="android:textSize">@dimen/text_14</item>
+    </style>
+
+    <style name="TextAppearance.Large.Preference" parent="@android:style/TextAppearance.Large">
+        <item name="android:textSize">17.33dp</item>
+        <item name="android:textColor">#313131</item>
+    </style>
+
+    <style name="ProgressBar" parent="@android:style/Widget.ProgressBar.Small">
+        <item name="android:indeterminateDrawable">@drawable/progress_small</item>
+        <item name="android:minWidth">20dip</item>
+        <item name="android:maxWidth">20dip</item>
+        <item name="android:minHeight">20dip</item>
+        <item name="android:maxHeight">20dip</item>
+    </style>
+
+    <style name="CommonListView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:fastScrollEnabled">false</item>
+        <item name="android:divider">@null</item>
+        <item name="android:childDivider">@null</item>
+        <item name="android:headerDividersEnabled">false</item>
+        <item name="android:groupIndicator">@null</item>
+        <item name="android:footerDividersEnabled">false</item>
+        <item name="android:listSelector">@drawable/selector_common_list</item>
+        <item name="android:overScrollMode">never</item>
+    </style>
+
+    <style name="TextAppearance.TopicInGreyBackground" parent="@android:style/TextAppearance.Small">
+        <item name="android:textSize">@dimen/text_14</item>
+        <item name="android:textColor">@color/text_first</item>
+    </style>
+
+    <style name="SearchLayoutEditText" parent="@android:style/Widget.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:drawableLeft">@drawable/ic_searchbar_blue</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:background">@drawable/bg_searchbar</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:hint">@string/hint_input_keyword</item>
+        <item name="android:textColorHint">#86A5DF</item>
+        <item name="android:longClickable">false</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:paddingRight">40dip</item>
+        <item name="android:textAppearance">@style/TextAppearance.TopicInGreyBackground</item>
+        <item name="android:textCursorDrawable">@null</item>
+    </style>
+</resources>

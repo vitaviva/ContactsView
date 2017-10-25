@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="list_item_padding">11dp</dimen>
+    <dimen name="titlebar_height">48dp</dimen>
+    <dimen name="text_9">9dp</dimen>
+    <dimen name="text_11">11dp</dimen>
+    <dimen name="text_12">12dp</dimen>
+    <dimen name="text_14">14dp</dimen>
+    <dimen name="text_15">15dp</dimen>
+    <dimen name="text_16">16dp</dimen>
+    <dimen name="text_18">18dp</dimen>
+    <dimen name="text_32">32dp</dimen>
+    <dimen name="widget_radius">3dp</dimen>
+    <dimen name="widget_width">20dp</dimen>
+    <dimen name="widget_height">10dp</dimen>
+</resources>

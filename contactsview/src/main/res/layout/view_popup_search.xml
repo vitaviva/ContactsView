@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_common"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_titlebar_search" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/popup_search_content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical">
+            <!--Loading-->
+            <LinearLayout
+                android:id="@+id/popup_search_content_progress_frame"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_gravity="center"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ProgressBar
+                    android:id="@+id/popup_search_content_progress"
+                    style="@style/ProgressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:indeterminate="true" />
+
+                <TextView
+                    android:id="@+id/popup_search_content_progress_info"
+                    style="@style/SingleLine"
+                    android:layout_marginLeft="10dp"
+                    android:text="加载中..." />
+            </LinearLayout>
+            <!--搜索结果-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ListView
+                    android:id="@+id/popup_search_content_list"
+                    style="@style/CommonListView"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white" />
+                <!--搜索结果为空-->
+                <FrameLayout
+                    android:id="@+id/result_empty_frame"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <include
+                        android:id="@+id/emptyText"
+                        layout="@layout/view_popup_search_empty" />
+
+                </FrameLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+</LinearLayout>
